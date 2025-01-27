@@ -4,9 +4,10 @@
 #O programa deve, então, imprimir uma mensagem saudando o usuário pelo nome e informando o valor do salário em comparação com o bônus recebido.
 #O cálculo do KPI do bônus é 1000 + Salário * Bônus
 
+CONST_BONUS = 1000
 nome  = input("Informe o seu nome: ")
-sal   = input("Informe o seu salário mensal: ")
-bonus = input("Informe o seu bônus recebido: ")
-final = 1000 + (float(sal) * float(bonus))
+sal   = float(input("Informe o seu salário mensal: "))
+bonus = float(input("Informe o seu bônus recebido: "))
+final = CONST_BONUS + (sal * bonus)
 
 print(f"Olá {nome}, seu bônus foi de {final}")
